@@ -49,3 +49,13 @@ If you don't have the URL for the boilerplate repository, you can download the c
 ```
 pip install -r requirements.txt
 ```
+
+### AUTHOR
+
+<img src="https://avatars.githubusercontent.com/u/132559205?v=4" width="200">
+Mutia, Jeremiah
+https://github.com/jeffhaha101
+
+<img src="https://avatars.githubusercontent.com/u/132963774?v=4" width="200">
+Valmoria, Jemeric
+https://github.com/Ambetyaaa
