@@ -1,7 +1,28 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="content">
     <div class="container-fluid">
-        <h4 class="page-title">Add incident report</h4>
+        <div class="page-header">
+            <h4 class="page-title">MAGDAGDAG NG INSIDENTE</h4>
+            <ul class="breadcrumbs">
+                <li class="nav-home">
+                    <a href="{% url 'home' %}">
+                        <i class="flaticon-home"></i>
+                    </a>
+                </li>
+                <li class="separator">
+                    <i class="flaticon-right-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'incident-list'%}">Incident</a>
+                </li>
+                   <li class="separator">
+                    <i class="flaticon-right-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Add incident report</a>
+                </li>
+             </ul>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">

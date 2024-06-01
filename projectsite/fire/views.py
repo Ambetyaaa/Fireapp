@@ -245,7 +245,7 @@ class FireStationUpdateView(UpdateView):
 
 class FireStationDeleteView(DeleteView):
     model = FireStation
-    template_name = 'firestation_del.html'
+    template_name = 'firestation_delete.html'
     success_url = reverse_lazy('firestation-list')
 
 

@@ -1,7 +1,28 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="content">
     <div class="container-fluid">
-        <h4 class="page-title">Remove the weathercondition</h4>
+      <div class="page-header">
+            <h4 class="page-title">ULAT NG PANAHON></h4>
+            <ul class="breadcrumbs">
+                <li class="nav-home">
+                    <a href="{% url 'home' %}">
+                        <i class="flaticon-home"></i>
+                    </a>
+                </li>
+                <li class="separator">
+                    <i class="flaticon-right-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'weathercondition-list'%}"> weathercondition</a>
+                </li>
+                   <li class="separator">
+                    <i class="flaticon-right-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Add weathercondition</a>
+                </li>
+             </ul>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
@@ -21,7 +42,10 @@
                                         <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 col-sm-3">
+                                        <a href="{% url 'weathercondition-list' %}" class="btn btn-primary btn-rounded">Cancel</a>
+                                    </div>
                         </form>
                     </div>
                     </div>
@@ -30,4 +54,10 @@
         </div>
     </div>
 </div>
+
+<script>
+function confirmDelete() {
+    console.log("Delete operation confirmed");
+}
+</script>
 {% endblock %}

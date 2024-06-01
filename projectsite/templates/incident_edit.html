@@ -1,14 +1,28 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="content">
     <div class="container-fluid">
-        <h4 class="page-title">Update incident report</h4>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">Edit Fire Incident</div>
-                        <div class="card-category">Edit Fire Incident</div>
-                    </div>
+      <div class="page-header">
+            <h4 class="page-title">BAGUHIN ANG INSIDENTE></h4>
+            <ul class="breadcrumbs">
+                <li class="nav-home">
+                    <a href="{% url 'home' %}">
+                        <i class="flaticon-home"></i>
+                    </a>
+                </li>
+                <li class="separator">
+                    <i class="flaticon-right-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'incident-list'%}">Incident</a>
+                </li>
+                   <li class="separator">
+                    <i class="flaticon-right-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Edit incident report</a>
+                </li>
+             </ul>
+        </div>
 
                     <div class="col-md-6">
                     <div class="card-body">
