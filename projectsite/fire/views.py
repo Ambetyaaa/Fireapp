@@ -348,7 +348,7 @@ class FireTruckDeleteView(DeleteView):
 class FireFighterList(ListView):
     model = Firefighters
     context_object_name = 'firefighters'
-    template_name = "firefighterslist.html"
+    template_name = "firefighters_list.html"
     paginate_by = 5
 
     def get_queryset(self, *args, **kwargs):
