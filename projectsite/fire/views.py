@@ -220,7 +220,7 @@ def map_incident(request):
 class FireStationList(ListView):
     model = FireStation
     context_object_name = 'firestation'
-    template_name = "firestationlist.html"
+    template_name = "FireStationlist.html"
     paginate_by = 5
 
     def get_queryset(self, *args, **kwargs):
